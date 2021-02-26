@@ -12,7 +12,7 @@
 Сигнатура функции:
 
 ```cpp
-unsigned int testStr1(const char *str);
+unsigned int faStr1(const char *str);
 ```
 
 ### Задача №2
@@ -22,7 +22,7 @@ unsigned int testStr1(const char *str);
 Сигнатура функции:
 
 ```cpp
-unsigned int testStr2(const char *str);
+unsigned int faStr2(const char *str);
 ```
 
 ### Задача №3
@@ -32,7 +32,7 @@ unsigned int testStr2(const char *str);
 Сигнатура функции:
 
 ```cpp
-unsigned int testStr3(const char *str);
+unsigned int faStr3(const char *str);
 ```
 
 - В заголовочный файл `fun.h` необходимо поместить заголовоки функции.
