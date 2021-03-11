@@ -63,6 +63,11 @@ unsigned int faStr2(const char* str)
 		isFirstSym = false;
 		i++;
 	}
+	if (state == 'w' && isFirstSym == false)
+		{
+			if (!(str[i] >= 97 && str[i] <= 122)) 
+				isLegalWord = false;
+		}
 	if (state == 'w' && isLegalWord == true) 
 		count++;
 	return count;
