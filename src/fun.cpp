@@ -78,13 +78,13 @@ unsigned int faStr3(const char* str)
         {
 			L++;
             count++;
-            state = 'w'		
+            state = 'w';	
         }
         if (state == 'w' && str[i] == ' ')
         {
 			L = 0;
             summLen += L;
-			state = 'e'
+			state = 'e';
         }
         L++;
         i++;
