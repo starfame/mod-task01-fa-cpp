@@ -99,5 +99,6 @@ unsigned int faStr3(const char* str)
 		summLen += L;
     summLen = summLen / (float)count;
     mediumLen = summLen;
+	if (summLen - (float)mediumLen >= 0.5) mediumLen++;
     return mediumLen;
 }
