@@ -85,20 +85,18 @@ unsigned int faStr3(const char* str)
             count++;
             state = 'w';	
         }
-        else if (state == 'w' && str[i] == ' ')
+        if (state == 'w' && str[i] == ' ')
         {
             summLen += L;
 			L = 0;
 			state = 'e';
         }
-		else if (state == 'w' && str[i] != ' ')
-			L++;
+		L++;
         i++;
     }
     if (state == 'w') 
 		summLen += L;
     summLen = summLen / (float)count;
     mediumLen = summLen;
-	if (summLen - (float)mediumLen >= 0.5) mediumLen++;
     return mediumLen;
 }
