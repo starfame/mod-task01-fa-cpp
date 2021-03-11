@@ -46,7 +46,7 @@ unsigned int faStr2(const char* str)
 				isLegalWord = true;
 			isFirstSym = true;
 		}
-		if (state == 'w' && isFirstSym == false)
+		if (state == 'w' && isFirstSym == false && str[i] != ' ')
 		{
 			if (!(str[i] >= 97 && str[i] <= 122)) 
 				isLegalWord = false;
