@@ -75,7 +75,7 @@ unsigned int faStr2(const char* str)
 unsigned int faStr3(const char* str)
 {
     int i = 0, count = 0, L = 0, mediumLen;
-	float summLen;
+	float summLen = 0;
 	char state = 'e'; //w - state word, e - state empty 
     while (str[i] != '\0')
     {
