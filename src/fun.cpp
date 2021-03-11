@@ -39,7 +39,7 @@ unsigned int faStr2(const char* str)
 	bool isFirstSym = false;
 	while (str[i] != '\0')
 	{
-		if (state == 'e' && str[i] != ' '))
+		if (state == 'e' && str[i] != ' ')
 		{
 			state = 'w';
 			if (str[i] >= 65 && str[i] <= 90); 
