@@ -5,7 +5,7 @@ unsigned int faStr1(const char* str)
 	bool isLegalWord = false;
 	while (str[i] != '\0')
 	{
-		if (state == 'e' && str[i] != ' '))
+		if (state == 'e' && str[i] != ' ')
 		{
 			state = 'w';
 			if (str[i] > 57 || str[i] < 48) 
@@ -92,6 +92,6 @@ unsigned int faStr3(const char* str)
     if (state == 'w') 
 		summLen += L;
     summLen = summLen / (float)count;
-    mediumLen = sumLen;
+    mediumLen = summLen;
     return mediumLen;
 }
