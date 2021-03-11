@@ -91,7 +91,8 @@ unsigned int faStr3(const char* str)
 			L = 0;
 			state = 'e';
         }
-		L++;
+		if (state == 1 && str[i] != ' ') 
+			L++;
         i++;
     }
     if (state == 'w') 
